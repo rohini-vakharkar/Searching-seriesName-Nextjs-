@@ -81,7 +81,7 @@ const [value, setValue] = useState('')
    <h2 className='text-4xl font-semibold'>Tv Shows</h2>
    <section>
     <SearchBar onChange={onHandleChange} value={value}/>
-   </section>
+     </section>
     <section className='flex flex-wrap gap-3 justify-between'>
       {isLoading ? Array(12).fill(null).map((_,i)=> <CardLoading key={i} />) : 
       
