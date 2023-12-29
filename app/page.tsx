@@ -83,8 +83,7 @@ const [value, setValue] = useState('')
     <SearchBar onChange={onHandleChange} value={value}/>
      </section>
     <section className='flex flex-wrap gap-3 justify-between'>
-      {isLoading ? Array(12).fill(null).map((_,i)=> <CardLoading key={i} />) : 
-      
+      {isLoading ? Array(12).fill(null).map((_,i)=> <CardLoading key={i} />) :       
       data?.map((d:any,i:any)=>(
           <Card image={d.image.medium} name={d.name} key={i}/>
     ))}</section>
